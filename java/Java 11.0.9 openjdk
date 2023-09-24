@@ -8,5 +8,7 @@ micros:
         - apt-get update
         - apt install -y default-jre
         - java -version
+    run: # Java Command
+    dev: # Java Command
     primary: true
     public: true
