@@ -7,8 +7,10 @@ micros:
     commands:
         - apt-get update
         - apt install -y default-jre
-        - java -version
-    run: # Java Command
-    dev: # Java Command
+        - java -version # this is here to see if its install
+    run: |
+        bash -c 'java -jar' # edit this to run your java jar
+    dev: |
+        bash -c 'java -jar ' # edit this to run your java jar
     primary: true
     public: true
