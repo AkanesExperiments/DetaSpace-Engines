@@ -1,0 +1,12 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: CustomJavaEngine
+    src: ./
+    engine: custom
+    commands:
+        - apt-get update
+        - apt install -y default-jre
+        - java -version
+    primary: true
+    public: true
